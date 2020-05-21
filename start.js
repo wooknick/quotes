@@ -45,6 +45,6 @@ app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
-app.listen(9000);
+app.listen(process.env.PORT);
 
-console.log(`server start on http://localhost:9000`);
+console.log(`server start on http://localhost:${process.env.PORT}`);
