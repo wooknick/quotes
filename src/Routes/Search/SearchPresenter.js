@@ -11,8 +11,10 @@ const Wrapper = styled.div`
 `;
 
 const LoaderWrapper = styled.div`
+  width: 100%;
+  max-width: ${(props) => props.theme.maxWidth};
   height: 100%;
-  padding-top: 50%;
+  padding-top: 30vh;
   display: flex;
   align-items: center;
 `;
@@ -26,9 +28,11 @@ const SearchPresenter = ({ searchTerm, loading, data }) => {
     );
   } else if (loading === true) {
     return (
-      <LoaderWrapper>
-        <Loader />
-      </LoaderWrapper>
+      <Wrapper>
+        <LoaderWrapper>
+          <Loader />
+        </LoaderWrapper>
+      </Wrapper>
     );
   } else if (data) {
     return (
