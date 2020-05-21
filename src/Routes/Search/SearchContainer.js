@@ -13,7 +13,7 @@ const SearchContainer = ({ location: { search } }) => {
   useEffect(() => {
     axios({
       method: "get",
-      url: `http://localhost:9000/api/quotes/${searchTerm}?limit=${limit}&skip=${skip}`,
+      url: `/api/quotes/${searchTerm}?limit=${limit}&skip=${skip}`,
       responseType: "json",
     }).then((res) => {
       console.log("call");
