@@ -1,7 +1,13 @@
 # Quote
-
 영화 속 명대사를 검색해 봅시다!
 
-## live demos
+## Usages
+- If you search for a movie title, a famous line is printed.
 
-[try it](https://quotes-search.herokuapp.com/#/)
+## Technologies
+- express.js
+- mongoDB
+- javascript[es6+]
+
+## live demo
+[Try it yourself](https://quotes-search.herokuapp.com/#/)
